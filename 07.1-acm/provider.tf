@@ -1,3 +1,4 @@
+
 terraform {
   required_providers {
     aws = {
@@ -6,10 +7,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "daws78s-remote-state"
+    bucket = "vijay-remote-state"
     key    = "expense-dev-acm"
     region = "us-east-1"
-    dynamodb_table = "daws78s-locking"
+    dynamodb_table = "vijay-remotestate-lock"
   }
 }
 
